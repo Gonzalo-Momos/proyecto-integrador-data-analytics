@@ -40,3 +40,6 @@ Quedaron así:
 - **`F_VENTAS`** (los hechos): `id_operacion`, `id_cliente`, `fecha_venta`, `id_producto`, `nombre_producto`, `categoria_producto`, `cantidad`, `precio_unitario`, `descuento_pct`, `total_venta`, `moneda`, `canal_venta`.
 
 El puente entre las dos es `id_cliente`, que está en ambas — así Power BI arma la relación solo y sabe que un cliente puede tener muchas ventas (por eso `D_CLIENTES` es el "1" y `F_VENTAS` es el "muchos" en el modelo).
+
+
+Tuve como siempre conflictos con la subida a TICHER de este repositorio, no me tomaba el .pbix diciendome que estaba corrupto y quedaba la entrega en 0% despues de darle muchisimas vueltas creo que es por que baje la base de datos como archivo .xlsx a mi pc y ahi trabaje, cuando intentaba hacerlo andar la IA no tenia los datos, probe con abir directamente la planilla en la web "https://docs.google.com/spreadsheets/d/1LkzC7vEzLyRcCeh9dZmZ1a2ICghKd64M/export?format=xlsx" provista por Ticher. 
