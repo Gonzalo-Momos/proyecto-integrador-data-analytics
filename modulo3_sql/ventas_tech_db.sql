@@ -2,7 +2,7 @@
 -- Ventas_Tech_DB
 -- Script de creación de base de datos para TechStore
 -- Incluye: DROP TABLES, CREATE TABLES (DDL + constraints), INSERT DATA (DML)
--- Compatible con PostgreSQL y SQL Server
+-- Motor: SQL Server
 -- =====================================================================
 
 -- (Opcional según motor) Si tu SGBD lo soporta y aún no existe la base:
