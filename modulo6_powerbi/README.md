@@ -2,7 +2,7 @@
 
 ## ¿Qué hice y en qué orden?
 
-Descargue el archivo `Ventas_export_legacy.xlsx` tal como vino del sistema viejo y lo fui modificando paso a paso en Power Query:
+Descargue el archivo `Ventas_export_legacy.xlsx` tal como vino del sistema viejo luego use el archivo en la WEB y lo fui modificando paso a paso en Power Query:
 
 1. **Saqué las filas que estaban completamente vacías.** Eran 4 filas, sin un solo dato adentro — no aportaban nada.
 2. **Saqué los duplicados exactos.** Había 48 filas que eran una copia de otra. Ojo con esto: al principio metí la pata y le pedí que compare duplicados mirando solo la columna de ciudad, y me borró filas que no tenían nada que ver entre sí. Lo corregí comparando la fila completa, que es como tiene que ser.
@@ -42,4 +42,4 @@ Quedaron así:
 El puente entre las dos es `id_cliente`, que está en ambas — así Power BI arma la relación solo y sabe que un cliente puede tener muchas ventas (por eso `D_CLIENTES` es el "1" y `F_VENTAS` es el "muchos" en el modelo).
 
 
-Tuve conflictos con la subida de este repositorio, no me tomaba el .pbix diciendome que estaba corrupto y quedaba la entrega en 0% despues de darle muchisimas vueltas creo que es por que baje la base de datos como archivo .xlsx a mi pc y ahi trabaje, cuando intentaba hacerlo andar la IA no tenia los datos, probe con abir directamente la planilla en la web "https://docs.google.com/spreadsheets/d/1LkzC7vEzLyRcCeh9dZmZ1a2ICghKd64M/export?format=xlsx" provista por Ticher. Adjunto los dos .pbix uno trabajando con el Excel descargado y otra con el Excel desde la web.
+Tuve conflictos con la subida de este repositorio, no me tomaba el .pbix diciendome que estaba corrupto y quedaba la entrega en 0% despues de darle muchisimas vueltas creo que es por que baje la base de datos como archivo .xlsx a mi pc y ahi trabaje, cuando intentaba hacerlo andar la IA no tenia los datos, probe con abir directamente la planilla en la web "https://docs.google.com/spreadsheets/d/1LkzC7vEzLyRcCeh9dZmZ1a2ICghKd64M/export?format=xlsx" provista por Ticher.
