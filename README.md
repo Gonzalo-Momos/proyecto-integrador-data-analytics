@@ -5,4 +5,4 @@
   * Limpieza y modelado en Power Query
   * Archivo de reporte: `modulo-6/entrega_powerbi.pbix`
   * Capturas de pasos aplicados y documentación
-  * Entrega evaluatoria para M6
+  * Entrega evaluatoria para M6 Pipeline_ETL_Balmaceda_Gonzalo.pbix
