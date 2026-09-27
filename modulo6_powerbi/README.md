@@ -43,3 +43,14 @@ El puente entre las dos es `id_cliente`, que está en ambas — así Power BI ar
 
 
 Tuve conflictos con la subida de este repositorio, no me tomaba el .pbix diciendome que estaba corrupto y quedaba la entrega en 0% despues de darle muchisimas vueltas creo que es por que baje la base de datos como archivo .xlsx a mi pc y ahi trabaje, cuando intentaba hacerlo andar la IA no tenia los datos, probe con abir directamente la planilla en la web "https://docs.google.com/spreadsheets/d/1LkzC7vEzLyRcCeh9dZmZ1a2ICghKd64M/export?format=xlsx" provista por Ticher.
+
+## En la evaluacion del M6 Pipeline_ETL
+**Nota** sobre la conexión del origen de datos:
+
+Para porder conectar este archivo `.xlsx` directamente desde GitHub usando el conector Web de Power BI, usá el enlace en formato **raw**, no el enlace normal de GitHub:
+
+- ❌ No funciona: `.../blob/main/modulo6_powerbi/Pipeline_ETL_Dataset.xlsx`
+- ✅ Sí funciona: `.../raw/main/modulo6_powerbi/Pipeline_ETL_Dataset.xlsx`
+
+El enlace con `blob` apunta a la página de GitHub que muestra el archivo (HTML), mientras que `raw` apunta al archivo real, que es lo que Power BI necesita para poder leerlo.
+
