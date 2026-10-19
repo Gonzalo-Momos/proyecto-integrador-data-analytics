@@ -22,7 +22,7 @@ Ventas_Tech_DB contiene cuatro tablas:
 | productos | Catálogo de productos y su categoría |
 | categorias | Tipos de producto |
 
-Los datos de ejemplo incluyen 15 ventas de marzo y abril de 2024.
+Se agregaron 5 ventas de abril de 2024 a las 10 de marzo, para un total de **15 ventas**. Así se pueden comparar dos meses y los cálculos se ven mejor.
 
 ## Estructura del repositorio
 
@@ -41,6 +41,16 @@ Los datos de ejemplo incluyen 15 ventas de marzo y abril de 2024.
 3. Abrí el archivo que quieras probar (por ejemplo, `m4_consultas_negocio.sql`).
 4. Verificá que la base activa sea `Ventas_Tech_DB`.
 5. Seleccioná la consulta que quieras correr y presioná **F5**.
+
+## Cómo conectar el .xlsx desde Power BI
+
+Para poder conectar el archivo `.xlsx` directamente desde GitHub usando el conector Web de Power BI, usá el enlace en formato **raw**, no el enlace normal de GitHub:
+
+- ❌ No funciona: `https://github.com/Gonzalo-Momos/proyecto-integrador-data-analytics/blob/main/modulo6_powerbi/Pipeline_ETL_Dataset.xlsx`
+- ✅ Sí funciona: `https://github.com/Gonzalo-Momos/proyecto-integrador-data-analytics/raw/main/modulo6_powerbi/Pipeline_ETL_Dataset.xlsx`
+
+El enlace con `blob` apunta a la página de GitHub que muestra el archivo (HTML), mientras que `raw` apunta al archivo real, que es lo que Power BI necesita para poder leerlo.
+
 
 ## Medidas DAX (módulo 8)
 
