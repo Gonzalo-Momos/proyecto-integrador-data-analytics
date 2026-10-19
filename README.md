@@ -1,8 +1,51 @@
 ## Contenidos del curso
 
-* **Módulo 1 al 5:** Fundamentos de Análisis de Datos y SQL
-* **Módulo 6:** Introducción a Power BI y Transformación de Datos
-  * Limpieza y modelado en Power Query
-  * Archivo de reporte: `modulo-6/entrega_powerbi.pbix`
-  * Capturas de pasos aplicados y documentación
-  * Entrega evaluatoria para M6 Pipeline_ETL_Balmaceda_Gonzalo.pbix
+# RetailPro – Proyecto Integrador de Data Analytics
+
+Proyecto de análisis de ventas para RetailPro, desarrollado a lo largo del curso de Data Analytics. Cubre desde el armado de la base de datos y las consultas SQL hasta el modelado y las medidas en Power BI.
+
+## Herramientas utilizadas
+
+- **SQL Server** y **SQL Server Management Studio (SSMS)** para la base de datos y las consultas
+- **Power BI Desktop** (Power Query y DAX) para la transformación de datos, el modelo y las medidas
+- **GitHub** para el control de versiones
+- **Claude.ai** (versión gratuita) como asistente de IA para revisar consultas SQL, validar cálculos y redactar documentación
+
+## Base de datos
+
+Ventas_Tech_DB contiene cuatro tablas:
+
+| Tabla | Descripción |
+|---|---|
+| ventas | Registro de cada venta: fecha, cliente, producto, cantidad y precio unitario |
+| clientes | Datos de los clientes: nombre, email, ciudad y fecha de registro |
+| productos | Catálogo de productos y su categoría |
+| categorias | Tipos de producto |
+
+Los datos de ejemplo incluyen 15 ventas de marzo y abril de 2024.
+
+## Estructura del repositorio
+
+| Carpeta | Contenido |
+|---|---|
+| `modulo3_sql` | Creación de la base de datos `Ventas_Tech_DB` y carga de datos. Es la base que se usa en los módulos 4 y 5 |
+| `modulo4_sql` | `m4_consultas_negocio.sql`: resumen mensual, ranking de productos, clientes recurrentes y comparación de meses contra el promedio |
+| `modulo5_sql` | `m5_consultas_joins.sql`: INNER JOIN de 4 tablas, LEFT JOIN y UNION ALL |
+| `modulo6_powerbi` | Limpieza y transformación de datos en Power Query (pipeline ETL). Archivo principal: `Pipeline_ETL_Balmaceda_Gonzalo.pbix`, que usa el dataset `Pipeline_ETL_Dataset.xlsx`. El resto son prácticas intermedias (`lenguaje-m-editor-avanzado`, `practica_lenguaje_m`, `m6_unidad2.pbix`) y `Ventas_export_legacy.xlsx` |
+| `modulo8_Dax` | `Balmaceda_Gonzalo_Checkpoint2.pbix`: modelo estrella y 5 medidas DAX |
+
+## Cómo ejecutar los scripts SQL
+
+1. Abrí SQL Server Management Studio y conectate a tu servidor.
+2. Ejecutá primero el script de `modulo3_sql` para crear la base y cargar los datos.
+3. Abrí el archivo que quieras probar (por ejemplo, `m4_consultas_negocio.sql`).
+4. Verificá que la base activa sea `Ventas_Tech_DB`.
+5. Seleccioná la consulta que quieras correr y presioná **F5**.
+
+## Medidas DAX (módulo 8)
+
+El archivo `.pbix` incluye cinco medidas: Total Ventas, Ventas Online, Ventas YTD, Ventas LY y % Crecimiento Anual.
+
+## Autor
+
+Gonzalo Ariel Balmaceda Manzanares.
