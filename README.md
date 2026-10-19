@@ -1,5 +1,3 @@
-## Contenidos del curso
-
 # RetailPro – Proyecto Integrador de Data Analytics
 
 Proyecto de análisis de ventas para RetailPro, desarrollado a lo largo del curso de Data Analytics. Cubre desde el armado de la base de datos y las consultas SQL hasta el modelado y las medidas en Power BI.
